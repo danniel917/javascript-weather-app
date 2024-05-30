@@ -1,4 +1,6 @@
-const apiKey = owm=pyowm.OWM('2335b5e807788bf50e7c4b5024e508d1');
+require('dotenv').config();
+
+const apiKey = process.env.WEATHER_API_KEY;
 const apiUrl = "https://api.openweathermap.org/data/2.5/weather?q=";
 const searchInput = document.querySelector(".search input");
 const searchButton = document.querySelector(".search button");
